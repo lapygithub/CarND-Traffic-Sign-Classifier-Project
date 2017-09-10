@@ -1,27 +1,26 @@
-#Traffic Sign Recognition Writeup - M. Lapinskas 9 Sept 2017
-
-Build a Traffic Sign Recognition Project
+#**Traffic Sign Recognition Writeup - M. Lapinskas 9 Sept 2017**
+---
+**Build a Traffic Sign Recognition Project**
 
 The goals / steps of this project are the following:
 
-Load the data set (see below for links to the project data set)
-Explore, summarize and visualize the data set
-Design, train and test a model architecture
-Use the model to make predictions on new images
-Analyze the softmax probabilities of the new images
-Summarize the results with a written report
+* Load the data set (see below for links to the project data set)
+* Explore, summarize and visualize the data set
+* Design, train and test a model architecture
+* Use the model to make predictions on new images
+* Analyze the softmax probabilities of the new images
+* Summarize the results with a written report
 
 [//]: # (Image References)
 
 [image1]: ./examples/visualization1.jpg "Visualization - Simple"
-[image1a]: ./examples/visualization2.jpg "Visualization - Full Set"
-[image2]: ./examples/visualization1.jpg "Grayscaling - Before"
-[image2a]: ./examples/grayscale.jpg "Grayscaling - After"
-[image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/10_new_images.png "New Test Images"
-[image5]: ./examples/bad_new_images.png "Bad New Test Images"
+[image2]: ./examples/visualization2.jpg "Visualization - Full Set"
+[image3]: ./examples/visualization1.jpg "Grayscaling - Before"
+[image4]: ./examples/grayscale.jpg "Grayscaling - After"
+[image5]: ./examples/10_new_images.png "New Test Images"
+[image6]: ./examples/bad_new_images.png "Bad New Test Images"
 
-Rubric Points
+## Rubric Points
 
 ###Here I will consider the rubric points individually and describe how I addressed each point in my implementation.
 
@@ -29,7 +28,7 @@ Rubric Points
 
 ####1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
 
-You're reading it! Here is a link to my project code: TODO from Github
+You're reading it! Here is a link to my project code: https://github.com/lapygithub/CarND-Traffic-Sign-Classifier-Project
 
 ###Data Set Summary & Exploration
 
@@ -52,7 +51,7 @@ Here is an exploratory visualization of the data set. Initially, I displayed a s
 
 Later, I added a display of one image from each classification:
 
-![alt text][image1a]
+![alt text][image2]
 
 ###Design and Test a Model Architecture
 
@@ -61,8 +60,8 @@ Later, I added a display of one image from each classification:
 As a first step, I decided to convert the images to grayscale to reduce memory consumption, make image normalization easy and while color helps humans understand the meaning of signs, the CNN classification performance of traffice signs is not reliant on sign color.
 Here is an example of a traffic sign image before and after grayscaling.
 
-![alt text][image2]
-![alt text][image2a]
+![alt text][image3]
+![alt text][image4]
 
 As a last step, I normalized the image data because without consistent image input, the varience from image to image would like overwhelm the learning rate corrections by either under or overshooting.
 
@@ -125,11 +124,11 @@ A) Training set accuracy was 100% which validates that training considered all c
 
 I used 10 German traffic signs that I found on the web:
 
-![alt text][image4]
+![alt text][image5]
 
 These images all get classified correctly but I did find many images that were difficult to classify:
 
-![alt text][image5]
+![alt text][image6]
 
 These images might be difficult to classify because of a number of reasons given my model.  Sign is: not centered, skewed, too modified or not in the list of classified signs.
 
