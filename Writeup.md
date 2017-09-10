@@ -157,8 +157,8 @@ The code for making predictions on my final model is located in the near the bot
 
 For these well healed images, the predictions are 100% except for image 6 where the prediction is 94% for 28,Children crossing but has a 6% prediction for 29,Bicycles crossing. This makes sense given the relative nature of the graphics. Squint when you look at them and you can make out the 2 wheels versus the 2 people shapes.
 
-| Index | Probability (Prediction)                                           | 
-|:-----:|-----------|-------------|-------------|--------------|-------------| 
+| Index | 1         |   2         |   3         |   4          |  5          | 
+|:-----:|:----------|:------------|:------------|:-------------|:------------| 
 |   0   | 1.00(18)  |   0.00(27)  |   0.00(11)  |   0.00(30)   |  0.00( 1)   | 
 |   0   | 1.00(18)  |   0.00(27)  |   0.00(11)  |   0.00(30)   |  0.00( 1)   | 
 |   1   | 1.00(27)  |   0.00(11)  |   0.00(18)  |   0.00(40)   |  0.00(21)   | 
