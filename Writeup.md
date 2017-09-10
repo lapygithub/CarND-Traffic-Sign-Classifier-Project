@@ -13,9 +13,9 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/visualization1.jpg "Visualization - Simple"
-[image2]: ./examples/visualization2.jpg "Visualization - Full Set"
-[image3]: ./examples/visualization1.jpg "Grayscaling - Before"
+[image1]: ./examples/visualization1.png "Visualization - Simple"
+[image2]: ./examples/visualization2.png "Visualization - Full Set"
+[image3]: ./examples/visualization1.png "Grayscaling - Before"
 [image4]: ./examples/grayscale.jpg "Grayscaling - After"
 [image5]: ./examples/10_new_images.png "New Test Images"
 [image6]: ./examples/bad_new_images.png "Bad New Test Images"
