@@ -72,7 +72,7 @@ I decided not to generate additional data because after doing an initial pass th
 My final model was the 'classic' LeNet model and consisted of the following layers:
 
 | Layer                 | Description                                   | 
-|:---------------------:|:---------------------------------------------:| 
+|:----------------------|:----------------------------------------------| 
 | Input                 | 32x32x1 Grayscale image                       | 
 | L1:Convolution 5x5    | 1x1 stride, 'valid' padding, outputs 28x28x6  |
 | L1:RELU               | Activation                                    |
@@ -137,7 +137,7 @@ These images might be difficult to classify because of a number of reasons given
 Here are the results of the prediction:
 
 | Index | Image                   | Prediction                          | 
-|:-----:|:-----------------------:|:-----------------------------------:| 
+|:-----:|:------------------------|:------------------------------------| 
 |   0   | 18,General caution      | 18,General caution                  | 
 |   1   | 27,Pedestrians          | 27,Pedestrians                      |
 |   2   | 18,General caution      | 18,General caution                  | 
@@ -158,7 +158,7 @@ The code for making predictions on my final model is located in the near the bot
 For these well healed images, the predictions are 100% except for image 6 where the prediction is 94% for 28,Children crossing but has a 6% prediction for 29,Bicycles crossing. This makes sense given the relative nature of the graphics. Squint when you look at them and you can make out the 2 wheels versus the 2 people shapes.
 
 | Index | Probability (Prediction)                                           | 
-|:-----:|-------------------------------------------------------------------:| 
+|:-----:|--------------------------------------------------------------------| 
 |   0   | 1.00(18)      0.00(27)      0.00(11)      0.00(30)      0.00( 1)   | 
 |   0   | 1.00(18)      0.00(27)      0.00(11)      0.00(30)      0.00( 1)   | 
 |   1   | 1.00(27)      0.00(11)      0.00(18)      0.00(40)      0.00(21)   | 
